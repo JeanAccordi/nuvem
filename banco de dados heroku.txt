@@ -1,0 +1,14 @@
+mysql://bcabb530e34fab:d727dec6@us-cdbr-east-06.cleardb.net/heroku_2d66b1516bbbe69?reconnect=true
+
+Host: us-cdbr-east-06.cleardb.net
+Usuário: bcabb530e34fab
+Senha: d727dec6
+Banco: heroku_2d66b1516bbbe69
+
+
+
+<?PHP
+# Conexão com o banco de dados local
+$conexao = mysqli_connect('localhost','root','') or die("Erro de conexão");
+$banco = mysqli_select_db($conexao,'test') or die("Erro ao selecionar o banco de dados");
+?>
